@@ -1,5 +1,3 @@
-# File: lib/high_value.py
-
 class HighValue:
     def __init__(self, value_first, value_second):
         self.value_first = value_first
@@ -16,3 +14,5 @@ class HighValue:
             self.value_first += increase_by
         elif selection == "second":
             self.value_second += increase_by
+        else:
+            raise Exception('Incorrect selection')
